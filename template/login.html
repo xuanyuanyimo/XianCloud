@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<title>{title}</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+
+	<section class="w3l-login">
+		<div class="overlay">
+			<div class="wrapper">
+				<div class="logo">
+					<a class="brand-logo">{login}</a>
+				</div>
+				<div class="form-section">
+					<h3>{login_title}</h3>
+					<form action="handle.php" method="get" class="signin-form">
+						<div class="form-input">
+							<input type="text" name="username" placeholder="请输入用户名..." value="{返回用户名}" required="" autofocus>
+						</div>
+						<div class="form-input">
+							<input type="password" name="password" placeholder="请输入密码..." required="">
+						</div>
+						<button type="submit" class="btn btn-primary theme-button mt-4">{login}</button>
+						<div class="new-signup">
+							<a>密码使用md5进行单向加密，无论是谁也无法获取明文！</a>
+						</div>
+					</form>
+					<p class="signup">若输入的账号不存在，将自动创建它。</p>
+				</div>
+			</div>
+		</div>
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+
+		<div class="copy-right">
+			<p>{copyright}</p>
+		</div>
+	</section>
+</body>
+</html>

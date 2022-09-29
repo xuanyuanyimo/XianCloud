@@ -1,0 +1,28 @@
+<main class="probootstrap-main mb-5">
+
+  <section class="probootstrap-bg probootstrap-animate" data-animate-effect="fadeInLeft" style="background-image: url(https://img.xxzt.shop/api);"></section>
+
+  <section class="probootstrap-animate mb-5">
+    <h1 class="mb-4 text-primary">{send_article}</h1>
+    <p class="lead">{send_article_alt}</p>
+    </div>
+  </section>
+  <section>
+    <form action="send.php" method="post" class="probootstrap-form probootstrap-animate">
+          <div class="row">
+          </div>
+          <div class="form-group">
+            <label for="article_name">{article_title}:</label>
+            <input type="text" class="form-control" id="article_title" name="article_title">
+          </div>
+          <div class="form-group">
+            <label for="article_body">{article_text}:</label>
+            <textarea cols="30" rows="10" class="form-control" id="article_text" name="article_text"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="submit" name="submit" value="{send_article}">
+          </div>
+        </form>
+  </section>
+
+</main>
